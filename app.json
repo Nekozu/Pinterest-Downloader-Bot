@@ -1,0 +1,30 @@
+
+ {
+"name": "pinterestdlbot",
+  "description": "Pinterest downloader",
+  "keywords": [
+    "pinterest",
+    "bot"
+  ],
+  "repository": "https://github.com/nekozu/pinterest-downloader-bot",
+  "env": {
+    "API_ID": {
+      "description": "my.telegram.org.",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "my.telegram.org.",
+      "required": true
+    },
+    "TOKEN": {
+      "description": "Bot Token.",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "stack": "container"
+}
