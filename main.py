@@ -41,14 +41,21 @@ def get_download_url(link):
     return download_url
 
 
+keyboard = InlineKeyboardMarkup(
+    [
+      [
+            InlineKeyboardButton(
+                text="Channel",
+                url="https://t.me/nekozu",
+            ),
+        ],
+    ]
+)
+
+
 @app.on_message(filters.command(["start"]))
-async def start(client, message):
-  keyboard= InlineKeyboardMarkup( [
-     [ 
-        InlineKeyboardButton("Bot Channel", url='https://t.me/nekozu'),
-     ]
-	] )                                                                                                                                                                                                      
-	 await message.reply_text("Hey! Im bot to download gif. video. photo from pinterest. how to use? simply. use /p command and space then pacte you url. example /phttps://pin.it/4LH0f6K. ", reply_markup=keyboard)       
+async def start(client, message):                                                                                                                                                                                               
+	 await message.reply_text("Hey! Im bot to download gif. video. photo from pinterest. how to use? simply. use /p command and space then pacte you url. example /p https://pin.it/4LH0f6K.", reply_markup=keyboard)
 
 @app.on_message(filters.command(["p"]))
 async def p(_, message: Message):
