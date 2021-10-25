@@ -6,7 +6,7 @@ A Telegram Bot To Download Video/Photo/Gif From Pinterest.com . Based On [Pyrogr
 
 # Deploy.
 
-To Run The App You Can Use Heroku :)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Nekozu/Pinterest-Downloader-Bot.git)
 
 # LICENSE
 GNU GENERAL PUBLIC LICENSE 3.0
